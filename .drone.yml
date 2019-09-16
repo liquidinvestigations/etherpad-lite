@@ -10,7 +10,6 @@ steps:
 - name: docker push branch ${DRONE_COMMIT_BRANCH}
   image: plugins/docker
   build_args:
-    - ETHERPAD_VERSION=1.7.5
     - ETHERPAD_PLUGINS=PadWiki ep_soauth
     - NODE_ENV=production
   settings:

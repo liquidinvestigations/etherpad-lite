@@ -1,2 +1,4 @@
 # etherpad-lite
-Settings for building a custom etherpad
+
+Settings and Dockerfile for building a custom etherpad, tracking the `develop` branch.
+
