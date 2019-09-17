@@ -9,10 +9,10 @@ trigger:
 steps:
 - name: docker push branch ${DRONE_COMMIT_BRANCH}
   image: plugins/docker
-  build_args:
-    - ETHERPAD_PLUGINS=PadWiki ep_soauth
-    - NODE_ENV=production
   settings:
+    build_args:
+      - ETHERPAD_PLUGINS=PadWiki ep_soauth
+      - NODE_ENV=production
     repo: liquidinvestigations/etherpad-lite
     tags: ${DRONE_COMMIT_BRANCH}
     username:
@@ -29,6 +29,9 @@ steps:
 - name: docker push autotag + latest
   image: plugins/docker
   settings:
+    build_args:
+      - ETHERPAD_PLUGINS=PadWiki ep_soauth
+      - NODE_ENV=production
     repo: liquidinvestigations/etherpad-lite
     auto_tag: true
     username:
