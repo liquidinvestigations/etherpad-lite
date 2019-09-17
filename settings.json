@@ -79,6 +79,7 @@
   "indentationOnNewLine": false,
   "exposeVersion": false,
   "loglevel": "${LOGLEVEL:INFO}",
-  "logconfig" : { "appenders": [ { "type": "console" } ] }
+  "logconfig" : { "appenders": [ { "type": "console" } ] },
+  "users": {"oauth2": {}}
 }
 
