@@ -79,7 +79,7 @@
   "loadTest": false,
   "indentationOnNewLine": false,
   "exposeVersion": false,
-  "loglevel": "INFO",
+  "loglevel": "${LOGLEVEL:INFO}",
   "logconfig" : { "appenders": [ { "type": "console" } ] }
 }
 
