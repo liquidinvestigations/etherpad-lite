@@ -11,7 +11,7 @@ steps:
   image: plugins/docker
   settings:
     build_args:
-      - ETHERPAD_PLUGINS=ep_padwiki ep_sotauth ep_metrics
+      - ETHERPAD_PLUGINS=ep_padwiki ep_sotauth
       - NODE_ENV=production
     repo: liquidinvestigations/etherpad-lite
     tags: ${DRONE_COMMIT_BRANCH}
@@ -30,7 +30,7 @@ steps:
   image: plugins/docker
   settings:
     build_args:
-      - ETHERPAD_PLUGINS=ep_padwiki ep_sotauth ep_metrics
+      - ETHERPAD_PLUGINS=ep_padwiki ep_sotauth
       - NODE_ENV=production
     repo: liquidinvestigations/etherpad-lite
     auto_tag: true
