@@ -7,8 +7,8 @@
   "dbType" : "postgres",
   "dbSettings" : {
                    "user"    : "${POSTGRES_USER}",
-                   "host"    : "${POSTGRES_HOST}",
-                   "port"    : "${POSTGRES_PORT}",
+                   "host"    : "${POSTGRES_HOST:__missing__}",
+                   "port"    : "${POSTGRES_PORT:-1}",
                    "password": "${POSTGRES_PASSWORD}",
                    "database": "${POSTGRES_DATABASE}"
                  },
