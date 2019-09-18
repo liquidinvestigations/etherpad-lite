@@ -4,6 +4,7 @@
   "ip": "0.0.0.0",
   "port" : "${PORT}",
   "showSettingsInAdminPage" : true,
+  "skinName": "no-skin",
   "dbType" : "postgres",
   "dbSettings" : {
                    "user"    : "${POSTGRES_USER}",
